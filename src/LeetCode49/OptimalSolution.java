@@ -4,8 +4,8 @@ import java.util.*;
 
 // https://leetcode.com/problems/group-anagrams/
 
-// Time Complexity: O(N * K), where N is the number of strings and K is the maximum length of a string.
-// Space Complexity: O(N * K), where N is the number of strings and K is the maximum length of a string.
+// Time Complexity: O(N * K)
+// Space Complexity: O(N * K)
 // This approach uses a HashMap to group anagrams together.
 
 class OptimalSolution {

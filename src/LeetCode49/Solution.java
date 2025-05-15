@@ -5,6 +5,7 @@ import java.util.*;
 // https://leetcode.com/problems/group-anagrams/
 
 // Time Complexity: O(N * K log K)
+// Space complexity: O(N * K)
 
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
