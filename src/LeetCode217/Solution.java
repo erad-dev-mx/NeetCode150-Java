@@ -4,6 +4,7 @@ package LeetCode217;
 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
+// This approach uses a HashSet to track the numbers we have seen so far.
 
 import java.util.HashSet;
 

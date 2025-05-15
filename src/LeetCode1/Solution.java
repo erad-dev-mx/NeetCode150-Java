@@ -4,6 +4,7 @@ package LeetCode1;
 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
+// This approach uses a HashMap to store the indices of the numbers as we iterate through the array.
 
 import java.util.HashMap;
 import java.util.Map;
