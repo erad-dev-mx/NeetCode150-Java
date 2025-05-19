@@ -1,5 +1,11 @@
 package LeetCode242;
 
+// https://leetcode.com/problems/valid-anagram/
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// This approach uses an array of size 26 to count the occurrences of each character in both strings.
+
 class Solution {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
