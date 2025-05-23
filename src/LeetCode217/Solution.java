@@ -1,12 +1,15 @@
 package LeetCode217;
 
-// https://leetcode.com/problems/contains-duplicate/
-
-// Time Complexity: O(n)
-// Space Complexity: O(n)
-// This approach uses a HashSet to track the numbers we have seen so far.
-
 import java.util.HashSet;
+
+/**
+ * Solution for LeetCode 217
+ *
+ * @see <a href="https://leetcode.com/problems/contains-duplicate/">LeetCode 217</a>
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * This approach uses a HashSet to track the numbers we have seen so far.
+ */
 
 class Solution {
     public boolean containsDuplicate(int[] nums) {

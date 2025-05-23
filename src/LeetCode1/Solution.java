@@ -1,13 +1,16 @@
 package LeetCode1;
 
-// https://leetcode.com/problems/two-sum/
-
-// Time Complexity: O(n)
-// Space Complexity: O(n)
-// This approach uses a HashMap to store the indices of the numbers as we iterate through the array.
-
 import java.util.HashMap;
 import java.util.Map;
+
+/**
+ * Solution for LeetCode 1
+ *
+ * @see <a href="https://leetcode.com/problems/two-sum/">LeetCode 1</a>
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
+ * This approach uses a HashMap to store the indices of the numbers as we iterate through the array.
+ */
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {

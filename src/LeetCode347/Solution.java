@@ -2,10 +2,14 @@ package LeetCode347;
 
 import java.util.*;
 
-// https://leetcode.com/problems/top-k-frequent-elements/description/
-// Time Complexity: O(N log K)
-// Space Complexity: O(N)
-// This approach uses a min-heap to keep track of the top k frequent elements.
+/**
+ * Solution for LeetCode 347
+ *
+ * @see <a href="https://leetcode.com/problems/top-k-frequent-elements/description/">LeetCode 347</a>
+ * Time Complexity: O(N log K)
+ * Space Complexity: O(N)
+ * This approach uses a min-heap to keep track of the top k frequent elements.
+ */
 
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {

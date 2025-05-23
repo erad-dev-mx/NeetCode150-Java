@@ -2,10 +2,13 @@ package LeetCode49;
 
 import java.util.*;
 
-// https://leetcode.com/problems/group-anagrams/
-
-// Time Complexity: O(N * K log K)
-// Space complexity: O(N * K)
+/**
+ * Solution for LeetCode 49
+ *
+ * @see <a href="https://leetcode.com/problems/group-anagrams/">LeetCode 49</a>
+ * Time Complexity: O(N * K log K)
+ * Space Complexity: O(N * K)
+ */
 
 class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {

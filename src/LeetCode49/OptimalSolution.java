@@ -2,11 +2,14 @@ package LeetCode49;
 
 import java.util.*;
 
-// https://leetcode.com/problems/group-anagrams/
-
-// Time Complexity: O(N * K)
-// Space Complexity: O(N * K)
-// This approach uses a HashMap to group anagrams together.
+/**
+ * Solution for LeetCode 49
+ *
+ * @see <a href="https://leetcode.com/problems/group-anagrams/">LeetCode 49</a>
+ * Time Complexity: O(N * K)
+ * Space Complexity: O(N * K)
+ * This approach uses a HashMap to group anagrams together.
+ */
 
 class OptimalSolution {
     public List<List<String>> groupAnagrams(String[] strs) {
