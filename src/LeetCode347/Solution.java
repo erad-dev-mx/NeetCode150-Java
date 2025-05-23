@@ -1,4 +1,4 @@
-package LeetCode357;
+package LeetCode347;
 
 import java.util.*;
 
