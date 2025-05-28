@@ -2,6 +2,15 @@ package LeetCode36;
 
 import java.util.HashSet;
 
+/**
+ * Solution for LeetCode 36: Valid Sudoku
+ *
+ * @see <a href="https://leetcode.com/problems/valid-sudoku/">LeetCode 36</a>
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ * This approach uses hashing to track the numbers seen in each row, column, and 3x3 box.
+ */
+
 class Solution {
     public boolean isValidSudoku(char[][] board) {
         HashSet<Character>[] rows = new HashSet[9];
