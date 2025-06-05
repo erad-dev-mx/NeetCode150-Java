@@ -4,10 +4,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Solution for LeetCode 271 Encode and Decode Strings
+ *
+ * @see <a href="https://leetcode.com/problems/encode-and-decode-strings/">LeetCode 271</a>
+ * Time Complexity: O(N)
+ * Space Complexity: O(N)
+ * This approach uses a delimiter to encode and decode a list of strings.
+ */
+
 public class Solution {
     // Encodes a list of strings to a single string.
     public String encode(List<String> strs) {
-        if (strs.size() == 0) {
+        if (strs.isEmpty()) {
             return Character.toString((char) 258);
         }
 
