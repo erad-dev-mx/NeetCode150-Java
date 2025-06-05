@@ -37,3 +37,16 @@ public class Solution {
 // Your Codec object will be instantiated and called as such:
 // Codec codec = new Codec();
 // String encoded = codec.encode(strs);
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution codec = new Solution();
+        List<String> strs = Arrays.asList("hello", "world", "this", "is", "a", "test");
+        String encoded = codec.encode(strs);
+        System.out.println("Encoded: " + encoded);
+
+        List<String> decoded = codec.decode(encoded);
+        System.out.println("Decoded: " + decoded);
+    }
+}
