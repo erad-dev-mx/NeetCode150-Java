@@ -2,6 +2,16 @@ package LeetCode128;
 
 import java.util.HashSet;
 
+/**
+ * Solution for LeetCode 128
+
+ *
+ * @see <a href="https://leetcode.com/problems/longest-consecutive-sequence/">LeetCode 128</a>
+ * Time Complexity: O(N)
+ * Space Complexity: O(N)
+ * This approach uses a HashSet to store the numbers and checks for consecutive sequences.
+ */
+
 class Solution {
     public int longestConsecutive(int[] nums) {
         if (nums.length == 0) {
