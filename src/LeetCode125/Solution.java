@@ -22,3 +22,17 @@ class Solution {
         return true;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        String[] inputs = {"", "a", "A man, a plan, a canal: Panama", "race a car", ".,!@#$", "MadAm", "12321", "12345"};
+
+        for (String input : inputs) {
+            boolean result = solution.isPalindrome(input);
+            System.out.println("Input: \"" + input + "\" -> " + result);
+        }
+    }
+}
