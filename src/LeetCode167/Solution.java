@@ -27,3 +27,21 @@ class Solution {
         return null;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] numbers = {2, 7, 11, 15};
+        int target = 9;
+
+        int[] result = solution.twoSum(numbers, target);
+
+        if (result != null) {
+            System.out.println("Indices: " + result[0] + ", " + result[1]); // Output: 1, 2
+        } else {
+            System.out.println("No solution found.");
+        }
+    }
+}
