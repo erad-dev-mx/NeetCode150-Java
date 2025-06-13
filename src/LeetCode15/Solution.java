@@ -10,7 +10,7 @@ import java.util.List;
  * @see <a href="https://leetcode.com/problems/3sum/">LeetCode 15</a>
  * Time Complexity: O(N^2) + O(N LogN)
  * Space Complexity: O(N)
- * This approach uses a Two-Pointer approach
+ * This approach uses a Two-Pointer technique
  */
 
 class Solution {
