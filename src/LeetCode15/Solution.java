@@ -4,6 +4,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Solution for LeetCode 15
+ *
+ * @see <a href="https://leetcode.com/problems/3sum/">LeetCode 15</a>
+ * Time Complexity: O(N^2) + O(N LogN)
+ * Space Complexity: O(N)
+ * This approach uses a Two-Pointer approach
+ */
+
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
