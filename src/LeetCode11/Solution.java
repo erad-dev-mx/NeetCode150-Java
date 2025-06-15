@@ -1,5 +1,14 @@
 package LeetCode11;
 
+/**
+ * Solution for LeetCode 11
+ *
+ * @see <a href="https://leetcode.com/problems/container-with-most-water/">LeetCode 11</a>
+ * Time Complexity: O(N)
+ * Space Complexity: O(1)
+ * This approach uses a Two-Pointer technique
+ */
+
 class Solution {
     public int maxArea(int[] height) {
         int max = 0;
