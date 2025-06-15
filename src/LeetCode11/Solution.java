@@ -31,3 +31,19 @@ class Solution {
         return max;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] heights1 = {1, 8, 6, 2, 5, 4, 8, 3, 7};
+        System.out.println("Max area: " + solution.maxArea(heights1));
+
+        int[] heights2 = {5, 5, 5, 5, 5};
+        System.out.println("Max area: " + solution.maxArea(heights2));
+
+        int[] heights3 = {1, 2, 3, 4, 5, 6};
+        System.out.println("Max area: " + solution.maxArea(heights3));
+    }
+}
