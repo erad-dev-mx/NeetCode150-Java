@@ -1,5 +1,14 @@
 package LeetCode42;
 
+/**
+ * Solution for LeetCode 42
+ *
+ * @see <a href="https://leetcode.com/problems/trapping-rain-water/">LeetCode 42</a>
+ * Time Complexity: O(N)
+ * Space Complexity: O(1)
+ * This approach uses a Two-Pointer technique
+ */
+
 class Solution {
     public int trap(int[] height) {
         int left = 0;
