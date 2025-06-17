@@ -36,3 +36,19 @@ class Solution {
         return total;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] heights1 = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
+        System.out.println("Trapped water: " + solution.trap(heights1));
+
+        int[] heights2 = {4, 2, 0, 3, 2, 5};
+        System.out.println("Trapped water: " + solution.trap(heights2));
+
+        int[] heights3 = {2, 0, 2};
+        System.out.println("Trapped water: " + solution.trap(heights3));
+    }
+}
