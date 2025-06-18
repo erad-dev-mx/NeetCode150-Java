@@ -25,3 +25,18 @@ class Solution {
         return profit;
     }
 }
+
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] prices1 = {7, 1, 5, 3, 6, 4};
+        System.out.println("Max benefit: " + solution.maxProfit(prices1));
+
+        int[] prices2 = {5, 5, 5, 5, 5};
+        System.out.println("Max benefit: " + solution.maxProfit(prices2));
+
+        int[] prices3 = {7, 6, 4, 3, 1};
+        System.out.println("Max benefit: " + solution.maxProfit(prices3));
+    }
+}
