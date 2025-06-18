@@ -6,8 +6,8 @@ import java.util.HashSet;
  * Solution for LeetCode 3
  *
  * @see <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">LeetCode 3</a>
- * Time Complexity:
- * Space Complexity:
+ * Time Complexity: O(N)
+ * Space Complexity: O(min(N, M))
  * This approach uses a sliding window and Two-Pointer technique.
  */
 
@@ -40,5 +40,24 @@ class Solution {
         }
 
         return ans;
+    }
+}
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        String s1 = "";
+        System.out.println(solution.lengthOfLongestSubstring(s1));
+
+        String s2 = "a";
+        System.out.println(solution.lengthOfLongestSubstring(s2));
+
+        String s3 = "abcabcbb";
+        System.out.println(solution.lengthOfLongestSubstring(s3));
+
+        String s4 = "bmw";
+        System.out.println(solution.lengthOfLongestSubstring(s4));
     }
 }
