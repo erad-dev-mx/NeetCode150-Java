@@ -2,6 +2,16 @@ package LeetCode3;
 
 import java.util.HashSet;
 
+/**
+ * Solution for LeetCode 3
+ *
+ * @see <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">LeetCode 3</a>
+ * Time Complexity:
+ * Space Complexity:
+ * This approach uses a sliding window and Two-Pointer technique.
+ */
+
+
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         if (s.isEmpty()) {
