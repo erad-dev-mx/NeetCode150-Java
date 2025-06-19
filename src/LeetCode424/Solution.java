@@ -1,6 +1,13 @@
 package LeetCode424;
 
-
+/**
+ * Solution for LeetCode 424
+ *
+ * @see <a href="https://leetcode.com/problems/longest-repeating-character-replacement/">LeetCode 424</a>
+ * Time Complexity: O(N)
+ * Space Complexity: O(1)
+ * This approach uses a sliding window + Two-Pointer technique.
+ */
 
 class Solution {
     public int characterReplacement(String s, int k) {
