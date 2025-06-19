@@ -28,3 +28,26 @@ class Solution {
         return ans;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        String s1 = "ABAB";
+        int k1 = 2;
+        System.out.println(solution.characterReplacement(s1, k1)); // Output: 4
+
+        String s2 = "AABABBA";
+        int k2 = 1;
+        System.out.println(solution.characterReplacement(s2, k2)); // Output: 4
+
+        String s3 = "AAAA";
+        int k3 = 2;
+        System.out.println(solution.characterReplacement(s3, k3)); // Output: 4
+
+        String s4 = "ABCDE";
+        int k4 = 1;
+        System.out.println(solution.characterReplacement(s4, k4)); // Output: 2
+    }
+}
