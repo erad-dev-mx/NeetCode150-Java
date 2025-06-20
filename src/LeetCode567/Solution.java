@@ -1,5 +1,14 @@
 package LeetCode567;
 
+/**
+ * Solution for LeetCode 567
+ *
+ * @see <a href="https://leetcode.com/problems/permutation-in-string/">LeetCode 567</a>
+ * Time Complexity: O(N)
+ * Space Complexity: O(1)
+ * This approach uses a sliding window technique.
+ */
+
 class Solution {
     public boolean checkInclusion(String s1, String s2) {
         if (s1.length() > s2.length()) {
