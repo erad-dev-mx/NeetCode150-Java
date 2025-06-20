@@ -46,3 +46,21 @@ class Solution {
         return true;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        String s1 = "ab";
+        String s2 = "eidbaooo";
+        System.out.println(solution.checkInclusion(s1, s2)); // true
+
+        String s3 = "ab";
+        String s4 = "eidboaoo";
+        System.out.println(solution.checkInclusion(s3, s4)); //false
+
+        String s5 = "adc";
+        String s6 = "dcda";
+        System.out.println(solution.checkInclusion(s5, s6)); // true
+    }
+}
