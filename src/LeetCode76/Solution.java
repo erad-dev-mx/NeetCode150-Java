@@ -62,3 +62,35 @@ class Solution {
         }
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        String s1 = "ADOBECODEBANC";
+        String t1 = "ABC";
+        String result1 = solution.minWindow(s1, t1);
+        System.out.println("Result 1: " + result1);
+
+        String s2 = "A";
+        String t2 = "AA";
+        String result2 = solution.minWindow(s2, t2);
+        System.out.println("Result 2: " + result2);
+
+        String s3 = "ABC";
+        String t3 = "ABC";
+        String result3 = solution.minWindow(s3, t3);
+        System.out.println("Result 3: " + result3);
+
+        String s4 = "aaflslflsldkabc";
+        String t4 = "abc";
+        String result4 = solution.minWindow(s4, t4);
+        System.out.println("Result 4: " + result4);
+
+        String s5 = "ab";
+        String t5 = "abc";
+        String result5 = solution.minWindow(s5, t5);
+        System.out.println("Result 5: " + result5);
+    }
+}
