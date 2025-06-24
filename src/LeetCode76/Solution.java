@@ -3,7 +3,13 @@ package LeetCode76;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * Solution for LeetCode 76
+ *
+ * @see <a href="https://leetcode.com/problems/minimum-window-substring/">LeetCode 76</a>
+ * Time Complexity: O(S + T)
+ * Space Complexity: O(S + T)
+ */
 
 class Solution {
     public String minWindow(String s, String t) {
