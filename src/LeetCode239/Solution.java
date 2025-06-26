@@ -3,6 +3,15 @@ package LeetCode239;
 import java.util.Deque;
 import java.util.LinkedList;
 
+/**
+ * Solution for LeetCode 239
+ *
+ * @see <a href="https://leetcode.com/problems/sliding-window-maximum/">LeetCode 239</a>
+ * Time Complexity: O(N)
+ * Space Complexity: O(K)
+ */
+
+
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
         if (nums == null || nums.length == 0 || k <= 0) {
