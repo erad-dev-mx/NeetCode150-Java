@@ -33,7 +33,7 @@ class Solution {
                 deque.pollLast();
             }
 
-            // Adding the current index to th deque
+            // Adding the current index to the deque
             deque.offer(i);
 
             // Adding the maximum element of the current window to the result
@@ -43,5 +43,45 @@ class Solution {
         }
 
         return result;
+    }
+}
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] nums1 = {1, 3, -1, -3, 5, 3, 6, 7};
+        int k1 = 3;
+        int[] result1 = solution.maxSlidingWindow(nums1, k1);
+        System.out.print("Result 1: ");
+        printArray(result1);
+
+        int[] nums2 = {1};
+        int k2 = 1;
+        int[] result2 = solution.maxSlidingWindow(nums2, k2);
+        System.out.print("Result 2: ");
+        printArray(result2);
+
+        int[] nums3 = {9, 11};
+        int k3 = 2;
+        int[] result3 = solution.maxSlidingWindow(nums3, k3);
+        System.out.print("Result 3: ");
+        printArray(result3);
+
+        int[] nums4 = {4, -2};
+        int k4 = 2;
+        int[] result4 = solution.maxSlidingWindow(nums4, k4);
+        System.out.print("Result 4: ");
+        printArray(result4);
+    }
+
+    private static void printArray(int[] arr) {
+        System.out.print("[");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            if (i < arr.length - 1) System.out.print(", ");
+        }
+        System.out.println("]");
     }
 }
