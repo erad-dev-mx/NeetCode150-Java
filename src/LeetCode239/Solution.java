@@ -9,8 +9,8 @@ import java.util.LinkedList;
  * @see <a href="https://leetcode.com/problems/sliding-window-maximum/">LeetCode 239</a>
  * Time Complexity: O(N)
  * Space Complexity: O(K)
+ * This is a sliding window approach
  */
-
 
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
