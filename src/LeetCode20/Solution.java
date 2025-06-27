@@ -3,6 +3,15 @@ package LeetCode20;
 import java.util.HashMap;
 import java.util.Stack;
 
+/**
+ * Solution for LeetCode 20
+ *
+ * @see <a href="https://leetcode.com/problems/valid-parentheses/">LeetCode 20</a>
+ * Time Complexity: O(N)
+ * Space Complexity: O(N)
+ */
+
+
 class Solution {
     public boolean isValid(String s) {
         HashMap<Character, Character> mappedBrackets = new HashMap<>();
@@ -29,5 +38,27 @@ class Solution {
             }
         }
         return stack.isEmpty();
+    }
+}
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        test(solution, "()");
+        test(solution, "()[]{}");
+        test(solution, "{[()]}");
+        test(solution, "");
+        test(solution, "(]");
+        test(solution, "([)]");
+        test(solution, "(");
+        test(solution, ")");
+        test(solution, "({[)");
+    }
+
+    private static void test(Solution solution, String input) {
+        boolean result = solution.isValid(input);
+        System.out.println(result);
     }
 }
