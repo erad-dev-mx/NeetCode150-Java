@@ -1,5 +1,13 @@
 package LeetCode155;
 
+/**
+ * Solution for LeetCode 155
+ *
+ * @see <a href="https://leetcode.com/problems/min-stack/">LeetCode 155</a>
+ * Time Complexity: O(1)
+ * Space Complexity: O(1)
+ */
+
 class MinStack {
     private Node head;
 
