@@ -43,3 +43,21 @@ class Solution {
         };
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        test(solution, new String[]{"2", "1", "+", "3", "*"});
+        test(solution, new String[]{"4", "13", "5", "/", "+"});
+        test(solution, new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"});
+        test(solution, new String[]{"3", "4", "+"});
+        test(solution, new String[]{"5"});
+    }
+
+    private static void test(Solution solution, String[] tokens) {
+        int result = solution.evalRPN(tokens);
+        System.out.println("Result: " + result);
+    }
+}
