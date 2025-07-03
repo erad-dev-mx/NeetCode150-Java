@@ -2,6 +2,15 @@ package LeetCode150;
 
 import java.util.Stack;
 
+
+/**
+ * Solution for LeetCode 150
+ *
+ * @see <a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/">LeetCode 150</a>
+ * Time Complexity: O(N)
+ * Space Complexity: O(N)
+ */
+
 class Solution {
     public int evalRPN(String[] tokens) {
         Stack<Integer> stack = new Stack<>();

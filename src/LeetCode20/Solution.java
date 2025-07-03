@@ -11,7 +11,6 @@ import java.util.Stack;
  * Space Complexity: O(N)
  */
 
-
 class Solution {
     public boolean isValid(String s) {
         HashMap<Character, Character> mappedBrackets = new HashMap<>();
