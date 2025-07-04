@@ -3,6 +3,12 @@ package LeetCode22;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Solution for LeetCode 22
+ *
+ * @see <a href="https://leetcode.com/problems/generate-parentheses/">LeetCode 22</a>
+ */
+
 class Solution {
     public List<String> generateParenthesis(int n) {
         List<String> ans = new ArrayList<>();
