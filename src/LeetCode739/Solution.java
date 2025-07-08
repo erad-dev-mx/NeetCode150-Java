@@ -2,6 +2,14 @@ package LeetCode739;
 
 import java.util.Stack;
 
+/**
+ * Solution for LeetCode 739
+ *
+ * @see <a href="https://leetcode.com/problems/daily-temperatures/">LeetCode 739</a>
+ * Time complexity: O(N)
+ * Space complexity: O(N)
+ */
+
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
         int n = temperatures.length;
