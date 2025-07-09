@@ -2,6 +2,14 @@ package LeetCode853;
 
 import java.util.Arrays;
 
+/**
+ * Solution for LeetCode 853
+ *
+ * @see <a href="https://leetcode.com/problems/car-fleet/submissions/">LeetCode 853</a>
+ * Time complexity: O(N Log N)
+ * Space complexity: O(N^2)
+ */
+
 class Solution {
     public int carFleet(int target, int[] position, int[] speed) {
         int n = position.length;
