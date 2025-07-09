@@ -34,3 +34,30 @@ class Solution {
         return count;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int target1 = 12;
+        int[] pos1 = {10, 8, 0, 5, 3};
+        int[] speed1 = {2, 4, 1, 1, 3};
+        System.out.println("Fleet count: " + solution.carFleet(target1, pos1, speed1));
+
+        int target2 = 10;
+        int[] pos2 = {3};
+        int[] speed2 = {3};
+        System.out.println("Fleet count: " + solution.carFleet(target2, pos2, speed2));
+
+        int target3 = 100;
+        int[] pos3 = {0, 2, 4};
+        int[] speed3 = {4, 2, 1};
+        System.out.println("Fleet count: " + solution.carFleet(target3, pos3, speed3));
+
+        int target4 = 15;
+        int[] pos4 = {6, 8};
+        int[] speed4 = {3, 2};
+        System.out.println("Fleet count: " + solution.carFleet(target4, pos4, speed4));
+    }
+}
