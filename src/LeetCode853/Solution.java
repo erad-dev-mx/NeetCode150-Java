@@ -7,7 +7,7 @@ import java.util.Arrays;
  *
  * @see <a href="https://leetcode.com/problems/car-fleet/submissions/">LeetCode 853</a>
  * Time complexity: O(N Log N)
- * Space complexity: O(N^2)
+ * Space complexity: O(N)
  */
 
 class Solution {
