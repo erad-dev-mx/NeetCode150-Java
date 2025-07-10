@@ -21,3 +21,25 @@ class Solution {
         return maxArea;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] heights1 = {2, 1, 5, 6, 2, 3};
+        System.out.println("Max area: " + solution.largestRectangleArea(heights1));
+
+        int[] heights2 = {2, 4};
+        System.out.println("Max area: " + solution.largestRectangleArea(heights2));
+
+        int[] heights3 = {6, 2, 5, 4, 5, 1, 6};
+        System.out.println("Max area: " + solution.largestRectangleArea(heights3));
+
+        int[] heights4 = {1, 2, 3, 4, 5};
+        System.out.println("Max area: " + solution.largestRectangleArea(heights4));
+
+        int[] heights5 = {5, 4, 3, 2, 1};
+        System.out.println("Max area: " + solution.largestRectangleArea(heights5));
+    }
+}
