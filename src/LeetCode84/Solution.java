@@ -2,6 +2,14 @@ package LeetCode84;
 
 import java.util.Stack;
 
+/**
+ * Solution for LeetCode 84
+ *
+ * @see <a href="https://leetcode.com/problems/largest-rectangle-in-histogram/">LeetCode 84</a>
+ * Time complexity: O(N)
+ * Space complexity: O(N)
+ */
+
 class Solution {
     public int largestRectangleArea(int[] heights) {
         int maxArea = 0;
