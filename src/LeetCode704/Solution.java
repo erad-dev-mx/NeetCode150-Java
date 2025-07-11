@@ -28,3 +28,25 @@ class Solution {
         return -1;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] nums1 = {-1, 0, 3, 5, 9, 12};
+        System.out.println("Index: " + solution.search(nums1, 9));
+
+        int[] nums2 = {-1, 0, 3, 5, 9, 12};
+        System.out.println("Index: " + solution.search(nums2, 2));
+
+        int[] nums3 = {1, 3, 5, 7, 9};
+        System.out.println("Index: " + solution.search(nums3, 1));
+
+        int[] nums4 = {1, 3, 5, 7, 9};
+        System.out.println("Index: " + solution.search(nums4, 9));
+
+        int[] nums5 = {1};
+        System.out.println("Index: " + solution.search(nums5, 1));
+    }
+}
