@@ -1,7 +1,7 @@
 package LeetCode704;
 
 /**
- * Solution for LeetCode 84
+ * Solution for LeetCode 704
  *
  * @see <a href="https://leetcode.com/problems/binary-search/">LeetCode 704</a>
  * Time complexity: O(Log N)
