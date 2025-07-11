@@ -1,5 +1,13 @@
 package LeetCode704;
 
+/**
+ * Solution for LeetCode 84
+ *
+ * @see <a href="https://leetcode.com/problems/binary-search/">LeetCode 704</a>
+ * Time complexity: O(Log N)
+ * Space complexity: O(1)
+ */
+
 class Solution {
     public int search(int[] nums, int target) {
         int start = 0;
