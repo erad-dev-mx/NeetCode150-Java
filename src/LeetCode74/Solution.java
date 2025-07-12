@@ -24,3 +24,33 @@ class Solution {
         return false;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[][] m1 = {
+                {1, 3, 5, 7},
+                {10, 11, 16, 20},
+                {23, 30, 34, 60}
+        };
+        System.out.println("Found: " + solution.searchMatrix(m1, 3));
+
+        int[][] m2 = {
+                {1, 3}
+        };
+        System.out.println("Found: " + solution.searchMatrix(m2, 3));
+
+        int[][] m3 = {
+                {1},
+                {3}
+        };
+        System.out.println("Found: " + solution.searchMatrix(m3, 2));
+
+        int[][] m4 = {
+                {1, 2, 3, 4}
+        };
+        System.out.println("Found: " + solution.searchMatrix(m4, 4));
+    }
+}
