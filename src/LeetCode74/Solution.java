@@ -1,5 +1,13 @@
 package LeetCode74;
 
+/**
+ * Solution for LeetCode 74
+ *
+ * @see <a href="https://leetcode.com/problems/search-a-2d-matrix/">LeetCode 74</a>
+ * Time complexity: O(Log(M * N))
+ * Space complexity: O(1)
+ */
+
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         int m = matrix.length; // rows
