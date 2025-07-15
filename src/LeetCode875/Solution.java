@@ -1,5 +1,13 @@
 package LeetCode875;
 
+/**
+ * Solution for LeetCode 875
+ *
+ * @see <a href="https://leetcode.com/problems/binary-search/">LeetCode 875</a>
+ * Time complexity: O(N Log(M))WhereNIsTheNumberOfPilesAndMIsTheMaximumValueInPiles
+ * Space complexity: O(1)
+ */
+
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
         int left = 1, right = 1;
