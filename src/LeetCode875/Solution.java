@@ -3,8 +3,8 @@ package LeetCode875;
 /**
  * Solution for LeetCode 875
  *
- * @see <a href="https://leetcode.com/problems/binary-search/">LeetCode 875</a>
- * Time complexity: O(N Log(M))WhereNIsTheNumberOfPilesAndMIsTheMaximumValueInPiles
+ * @see <a href="https://leetcode.com/problems/koko-eating-bananas/">LeetCode 875</a>
+ * Time complexity: O(N Log(M)) Where N is the number of piles and M is the maximum value in piles
  * Space complexity: O(1)
  */
 
