@@ -35,3 +35,25 @@ class Solution {
         return ans;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] nums1 = {3, 4, 5, 1, 2};
+        System.out.println("Min: " + solution.findMin(nums1));
+
+        int[] nums2 = {4, 5, 6, 7, 0, 1, 2};
+        System.out.println("Min: " + solution.findMin(nums2));
+
+        int[] nums3 = {11, 13, 15, 17};
+        System.out.println("Min: " + solution.findMin(nums3));
+
+        int[] nums4 = {2, 1};
+        System.out.println("Min: " + solution.findMin(nums4));
+
+        int[] nums5 = {1};
+        System.out.println("Min: " + solution.findMin(nums5));
+    }
+}
