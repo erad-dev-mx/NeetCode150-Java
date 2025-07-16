@@ -1,5 +1,13 @@
 package LeetCode153;
 
+/**
+ * Solution for LeetCode 153
+ *
+ * @see <a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/">LeetCode 153</a>
+ * Time complexity: O(Log(N))
+ * Space complexity: O(1)
+ */
+
 class Solution {
     public int findMin(int[] nums) {
         int left = 0;
