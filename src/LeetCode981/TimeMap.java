@@ -4,6 +4,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * Solution for LeetCode 981
+ *
+ * @see <a href="https://leetcode.com/problems/time-based-key-value-store/">LeetCode 981</a>
+ * Time complexity: O(Log(N))
+ * Space complexity: O(K * N)
+ */
+
 class TimeMap {
     private Map<String, TreeMap<Integer, String>> map;
 
