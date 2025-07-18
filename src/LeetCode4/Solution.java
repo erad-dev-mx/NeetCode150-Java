@@ -1,5 +1,13 @@
 package LeetCode4;
 
+/**
+ * Solution for LeetCode 4
+ *
+ * @see <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/">LeetCode 4</a>
+ * Time complexity: O(Log min(N, M))
+ * Space complexity: O(1)
+ */
+
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         if (nums1.length > nums2.length) {
