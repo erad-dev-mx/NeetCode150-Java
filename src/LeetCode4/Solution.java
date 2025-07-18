@@ -45,3 +45,30 @@ class Solution {
         return 0;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+
+        int[] nums1a = {1, 3};
+        int[] nums2a = {2};
+        System.out.println(solution.findMedianSortedArrays(nums1a, nums2a));
+
+        int[] nums1b = {1, 2};
+        int[] nums2b = {3, 4};
+        System.out.println(solution.findMedianSortedArrays(nums1b, nums2b));
+
+        int[] nums1c = {0, 0};
+        int[] nums2c = {0, 0};
+        System.out.println(solution.findMedianSortedArrays(nums1c, nums2c));
+
+        int[] nums1d = {};
+        int[] nums2d = {1};
+        System.out.println(solution.findMedianSortedArrays(nums1d, nums2d));
+
+        int[] nums1e = {2};
+        int[] nums2e = {};
+        System.out.println(solution.findMedianSortedArrays(nums1e, nums2e));
+    }
+}
