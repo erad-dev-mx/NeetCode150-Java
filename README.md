@@ -12,6 +12,7 @@ This repository contains solutions for various LeetCode problems. The solutions 
 
 - [1. Two Sum](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode1)
 - [3. Longest Substring Without Repeating Characters](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode3)
+- [4. Median of Two Sorted Arrays](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode4)
 - [11. Container With Most Water](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode11)
 - [15. 3Sum](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode15)
 - [20. Valid Parentheses](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode20)
@@ -29,6 +30,7 @@ This repository contains solutions for various LeetCode problems. The solutions 
 - [153. Find Minimum in Rotated Sorted Array](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode153)
 - [155. Min Stack](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode155)
 - [167. Two Sum II - Input Array Is Sorted](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode167)
+- [206. Reverse Linked List](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode206)
 - [217. Contains Duplicate](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode217)
 - [238. Product of Array Except Self](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode238)
 - [239. Sliding Window Maximum](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode239)
