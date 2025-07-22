@@ -1,6 +1,12 @@
 package LeetCode21;
 
-
+/**
+ * Solution for LeetCode 21
+ *
+ * @see <a href="https://leetcode.com/problems/merge-two-sorted-lists/">LeetCode 21</a>
+ * Time complexity: O(N)
+ * Space complexity: O(1)
+ */
 
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {

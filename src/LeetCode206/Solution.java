@@ -4,8 +4,8 @@ package LeetCode206;
  * Solution for LeetCode 206
  *
  * @see <a href="https://leetcode.com/problems/reverse-linked-list/">LeetCode 206</a>
- * Time complexity: O(1))
- * Space complexity: O(N)
+ * Time complexity: O(N)
+ * Space complexity: O(1)
  */
 
 class Solution {
