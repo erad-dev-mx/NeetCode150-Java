@@ -1,5 +1,12 @@
 package LeetCode143;
 
+/**
+ * Solution for LeetCode 143
+ *
+ * @see <a href="https://leetcode.com/problems/reorder-list/">LeetCode 143</a>
+ * Time complexity: O(N)
+ * Space complexity: O(N)
+ */
 
 class Solution {
     public void reorderList(ListNode head) {
