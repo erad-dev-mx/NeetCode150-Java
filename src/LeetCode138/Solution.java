@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * Solution for LeetCode 138
  *
- * @see <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">LeetCode 138</a>
+ * @see <a href="https://leetcode.com/problems/copy-list-with-random-pointer/">LeetCode 138</a>
  * Time complexity: O(N)
  * Space complexity: O(N)
  */
