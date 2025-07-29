@@ -1,5 +1,12 @@
 package LeetCode2;
 
+/**
+ * Solution for LeetCode 2
+ *
+ * @see <a href="https://leetcode.com/problems/add-two-numbers/">LeetCode 2</a>
+ * Time complexity: O(Max(N,M))
+ * Space complexity: O(Max(N, M))
+ */
 
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
