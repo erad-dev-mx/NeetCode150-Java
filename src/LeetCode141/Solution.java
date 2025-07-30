@@ -1,5 +1,13 @@
 package LeetCode141;
 
+/**
+ * Solution for LeetCode 141
+ *
+ * @see <a href="https://leetcode.com/problems/linked-list-cycle/">LeetCode 141</a>
+ * Time complexity: O(N)
+ * Space complexity: O(1)
+ */
+
 public class Solution {
     public boolean hasCycle(ListNode head) {
         if (head == null) {
