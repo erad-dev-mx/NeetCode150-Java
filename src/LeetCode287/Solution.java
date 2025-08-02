@@ -1,5 +1,13 @@
 package LeetCode287;
 
+/**
+ * Solution for LeetCode 287
+ *
+ * @see <a href="https://leetcode.com/problems/find-the-duplicate-number/">LeetCode 287</a>
+ * Time complexity: O(N)
+ * Space complexity: O(1)
+ */
+
 class Solution {
     public int findDuplicate(int[] nums) {
         int slow = nums[0];
