@@ -2,6 +2,14 @@ package LeetCode146;
 
 import java.util.HashMap;
 
+/**
+ * Solution for LeetCode 146
+ *
+ * @see <a href="https://leetcode.com/problems/lru-cache/">LeetCode 146</a>
+ * Time complexity: O(1)
+ * Space complexity: O(capacity)
+ */
+
 class LRUCache {
 
     private class Node {
