@@ -2,7 +2,13 @@ package LeetCode23;
 
 import java.util.PriorityQueue;
 
-
+/**
+ * Solution for LeetCode 23
+ *
+ * @see <a href="https://leetcode.com/problems/merge-k-sorted-lists/">LeetCode 23</a>
+ * Time complexity: O(N Log n)
+ * Space complexity: O(N)
+ */
 
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
