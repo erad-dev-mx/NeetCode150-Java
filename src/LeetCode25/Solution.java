@@ -94,3 +94,36 @@ class ListNode {
         this.next = next;
     }
 }
+
+
+// Test class
+class Test {
+    public static void printList(ListNode head) {
+        ListNode curr = head;
+        while (curr != null) {
+            System.out.print(curr.val + " ");
+            curr = curr.next;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        // Crear lista: 1 → 2 → 3 → 4 → 5
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+
+        Solution solution = new Solution();
+
+        System.out.println("Original list:");
+        printList(head);
+
+        int k = 2;
+        ListNode result = solution.reverseKGroup(head, k);
+
+        System.out.println("After list:");
+        printList(result);
+    }
+}
