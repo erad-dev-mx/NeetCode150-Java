@@ -1,5 +1,13 @@
 package LeetCode104;
 
+/**
+ * Solution for LeetCode 104
+ *
+ * @see <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">LeetCode 104</a>
+ * Time complexity: O(N)
+ * Space complexity: O(N)
+ */
+
 class Solution {
     public int maxDepth(TreeNode root) {
         if (root == null) {
