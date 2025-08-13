@@ -1,5 +1,13 @@
 package LeetCode543;
 
+/**
+ * Solution for LeetCode 543
+ *
+ * @see <a href="https://leetcode.com/problems/diameter-of-binary-tree/">LeetCode 543</a>
+ * Time complexity: O(N)
+ * Space complexity: O(N)
+ */
+
 class Solution {
     int maxDiameter = 0;
 
