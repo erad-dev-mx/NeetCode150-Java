@@ -51,3 +51,26 @@ class TreeNode {
         this.right = right;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        // Tree:
+        //      3
+        //     / \
+        //    9  20
+        //       / \
+        //      15  7
+        // Expected: true
+
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+
+        Solution solution = new Solution();
+        boolean result = solution.isBalanced(root);
+        System.out.println(result); // Expected: true
+    }
+}
