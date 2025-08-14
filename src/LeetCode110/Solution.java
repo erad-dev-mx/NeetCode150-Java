@@ -1,5 +1,13 @@
 package LeetCode110;
 
+/**
+ * Solution for LeetCode 110
+ *
+ * @see <a href="https://leetcode.com/problems/balanced-binary-tree/">LeetCode 110</a>
+ * Time complexity: O(N)
+ * Space complexity: O(N)
+ */
+
 class Solution {
     public boolean isBalanced(TreeNode root) {
         if (root == null) return true;
