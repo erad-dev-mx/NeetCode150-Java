@@ -33,3 +33,30 @@ class TreeNode {
         this.right = right;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        // Tree 1
+        TreeNode p = new TreeNode(1);
+        p.left = new TreeNode(2);
+        p.right = new TreeNode(3);
+
+        // Tree 2
+        TreeNode q = new TreeNode(1);
+        q.left = new TreeNode(2);
+        q.right = new TreeNode(3);
+
+        Solution solution = new Solution();
+        System.out.println(solution.isSameTree(p, q)); // Expected: true
+
+        // Another test
+        TreeNode p2 = new TreeNode(1);
+        p2.left = new TreeNode(2);
+
+        TreeNode q2 = new TreeNode(1);
+        q2.right = new TreeNode(2);
+
+        System.out.println(solution.isSameTree(p2, q2)); // Expected: false
+    }
+}
