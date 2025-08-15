@@ -1,5 +1,13 @@
 package LeetCode100;
 
+/**
+ * Solution for LeetCode 100
+ *
+ * @see <a href="https://leetcode.com/problems/same-tree/">LeetCode 100</a>
+ * Time complexity: O(N)
+ * Space complexity: O(N)
+ */
+
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) return true;
