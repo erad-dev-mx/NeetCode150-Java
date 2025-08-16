@@ -5,6 +5,14 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/**
+ * Solution for LeetCode 199
+ *
+ * @see <a href="https://leetcode.com/problems/binary-tree-right-side-view/">LeetCode 199</a>
+ * Time complexity: O(N)
+ * Space complexity: O(N)
+ */
+
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> result = new ArrayList<>();
