@@ -51,3 +51,21 @@ class TreeNode {
         this.right = right;
     }
 }
+
+// Test class
+class Test {
+    public static void main(String[] args) {
+        TreeNode root1 = new TreeNode(1);
+        root1.left = new TreeNode(2);
+        root1.right = new TreeNode(3);
+        root1.left.right = new TreeNode(5);
+        root1.right.right = new TreeNode(4);
+
+        TreeNode root2 = new TreeNode(1);
+        root2.right = new TreeNode(2);
+
+        Solution solution = new Solution();
+        System.out.println(solution.rightSideView(root1)); // Expected: [1, 3, 4]
+        System.out.println(solution.rightSideView(root2)); // Expected: [1, 2]
+    }
+}
