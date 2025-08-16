@@ -21,7 +21,7 @@ This repository contains solutions for various LeetCode problems. The solutions 
 - [21. Merge Two Sorted Lists](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode21)
 - [22. Generate Parentheses](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode22)
 - [23. Merge k Sorted List](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode23)
-- [25. Reverse Nodes in k-Group](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/leetCode25)
+- [25. Reverse Nodes in k-Group](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode25)
 - [36. Valid Sudoku](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode36)
 - [42. Trapping Rain Water](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode42)
 - [49. Group Anagrams](https://github.com/erad-dev-mx/NeetCode150-Java/tree/master/src/LeetCode49)
