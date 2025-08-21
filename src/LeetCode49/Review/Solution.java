@@ -33,3 +33,5 @@ class Solution {
         return new ArrayList<>(ansMap.values());
     }
 }
+
+// My thoughts: Using a kind of frequency map, we will evaluate which words belongs to an anagram
