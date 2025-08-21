@@ -18,3 +18,6 @@ class Solution {
         return true;
     }
 }
+
+// My thoughts: We create a kind of frequency map with every letter of the alphabet.
+// At the end, if the map is not full of zeroes it means that is not an anagram.
