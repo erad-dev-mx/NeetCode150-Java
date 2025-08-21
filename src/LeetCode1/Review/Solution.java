@@ -19,3 +19,5 @@ class Solution {
         return new int[]{-1, -1};
     }
 }
+
+// Thoughts: With the help of a HashMap we will know which numbers are the necessary to get the target.

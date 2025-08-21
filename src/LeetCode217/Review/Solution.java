@@ -17,4 +17,4 @@ class Solution {
     }
 }
 
-// My thoughts: Here we use a HashSet to determine if the array contains a duplicate number
+// My thoughts: Here we use a HashSet to determine if the array contains a duplicate number.
