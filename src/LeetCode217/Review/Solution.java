@@ -16,3 +16,5 @@ class Solution {
         return false;
     }
 }
+
+// My thoughts: Here we use a HashSet to determine if the array contains a duplicate number
