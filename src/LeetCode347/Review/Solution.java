@@ -31,3 +31,6 @@ class Solution {
         return ans;
     }
 }
+
+// My thoughts: To get the top k frequent elements, we are going to use a HashMap, to save the number and its
+// frequency. Then we create our minHeap to put the most k frequent elements. At the end we just return the answer.
