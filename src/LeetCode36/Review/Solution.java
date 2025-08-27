@@ -39,4 +39,7 @@ class Solution {
     }
 }
 
-// R/3 + 3 + C/3
+// My thoughts: To validate if it's a valid sudoku we will use 9 HashSets for every column, other 9 HashSets for
+// every row and, another 9 HashSets for boxes. For rows and cols the approach is very simple and for boxes we use this
+// formula (r / 3) * 3 + c / 3 to get a number associate to every square inside sudoku and with that it is simple to
+// just check if a value is present or not.
