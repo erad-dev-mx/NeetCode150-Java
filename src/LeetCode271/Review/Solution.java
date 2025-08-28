@@ -8,6 +8,6 @@ public class Solution {
     }
 
     // Decodes a single string to a list of strings.
-    public String encode(List<String> strs) {
+    public String encode(String strs) {
     }
 }
