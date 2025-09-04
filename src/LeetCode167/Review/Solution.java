@@ -18,3 +18,7 @@ class Solution {
         return null;
     }
 }
+
+// My thoughts: To solve we will use a two-pointer technique, because it is O(n) in time complexity. It works quite
+// straightforward, we will add both value if the result is greater than target we will decrease the value of our right
+// pointer if is less than target we will increase the value of left pointer.
