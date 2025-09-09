@@ -39,3 +39,8 @@ class Solution {
         }
     }
 }
+
+// My thoughts: The approach to solve this problem is the next one, first we will sort our array of ints. Then we will
+// use a two-pointer technique, if the sum of the two pointer is greater than our sum value we will decrease right
+// pointer else, we will increase left pointer. If we found an expected value we can add to our answer the value. This
+// problem has a O (log n) + O (n squared) time complexity.
