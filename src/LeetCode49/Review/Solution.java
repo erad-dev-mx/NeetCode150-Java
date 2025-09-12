@@ -34,4 +34,6 @@ class Solution {
     }
 }
 
-// My thoughts: Using a kind of frequency map, we will evaluate which words belongs to an anagram
+// My thoughts: Using a kind of frequency map, we will evaluate which words belongs to an anagram. For each word we
+// build a frequency map of 26 letters. That map is the key in a HashMap. Words with the same key go to the same list,
+// meaning they are anagrams.
