@@ -20,4 +20,5 @@ class Solution {
     }
 }
 
-// Thoughts: With the help of a HashMap we will know which numbers are the necessary to get the target.
+// Thoughts: We use a HashMap to store numbers and their index. For each number, we check if the complement
+// (target - number) exists. If yes, we return both indexes.
