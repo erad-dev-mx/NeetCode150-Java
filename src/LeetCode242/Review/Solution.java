@@ -19,5 +19,5 @@ class Solution {
     }
 }
 
-// My thoughts: We create a kind of frequency map with every letter of the alphabet.
-// At the end, if the map is not full of zeroes it means that is not an anagram.
+// My thoughts: We create a kind of frequency map with every letter of the alphabet. One string adds +1, the other
+// string adds -1. At the end, if the map is not full of zeroes it means that is not an anagram.
