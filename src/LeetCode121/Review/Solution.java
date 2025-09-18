@@ -14,3 +14,6 @@ class Solution {
         return profit;
     }
 }
+
+// My thoughts: For this approach we will use a couple of variables, min to have the minimum value of the array and
+// profit to get the maximum profit across the entire graphic.
