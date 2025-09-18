@@ -27,3 +27,8 @@ class Solution {
         return answer;
     }
 }
+
+// To solve this problem it was necessary to implement a sliding window plus two pointer approach. How it works? Well,
+// at the beginning we will have our pointer in the first position (index zero). Then we will check if the HashSet
+// contains the character we will remove from it, and we will increase the value of left pointer, otherwise we will add
+// the value to the HashSet and we will increase value of right pointer.
