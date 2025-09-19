@@ -19,3 +19,9 @@ class Solution {
         return ans;
     }
 }
+
+// My thoughts: To solve this problem we use a sliding window + two pointer approach. How? Well, we will use two
+// pointers, left and right (in the code is i), and with the help of a formula (Length - Max or Most Repeated Char is
+// less or equal to K) we will move our right pointer and sum one to our occurrences array, if the formula doesn't work
+// we will increase left pointer and remove one from occurrences array. To our answer every time we loop we will update
+// the value with the length (but just if it is greater). And that will be our answer.
