@@ -33,3 +33,9 @@ class Solution {
         return true;
     }
 }
+
+// My thoughts: To solve this problem we will use two "maps" (array of 26 characters because of alphabet), these maps
+// will contain zeros and ones, ones are going to be present exclusively for each character present in the string.
+// And with the help of the sliding window technique, our second "map" we will contain just the length of s1 string,
+// if the windows doesn't satisfy we will remove the first oldest char and add a new to the map. With a loop we will run
+// for all s2 until we found a permutation of the string or in other hand return false if we don't found anything.
