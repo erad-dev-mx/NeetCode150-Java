@@ -53,3 +53,10 @@ class Solution {
         }
     }
 }
+
+// My thoughts: To solve the problem it was necessary to use a two pointer plus sliding window technique, we will use
+// a HashMap to store the value and the quantity for example (A, B, C) -> {(A, 1), (B, 1), (C, 1)}. After that we will
+// initiate our pointer, until we get the values from the first HashMap while in the loop we will add all these values
+// in other HashMap, if we found a potential answer we will save in out answer array the length, the left and the right
+// pointer to compare with the next valid value. So after we found one we move left pointer until the end. To move right
+// pointer it is necessary to not found any values from first HashMap.
