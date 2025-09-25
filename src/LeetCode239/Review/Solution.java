@@ -34,3 +34,9 @@ class Solution {
         return result;
     }
 }
+
+// My thoughts, this is a sliding window problem, we need to return the max value of each window from the very left to
+// the very right of the array. To solve we will use a Deque, we will save the values from the window but when we
+// already have values there we will evaluate if the index value is greater if it is we will add to our deque, but if is
+// not we won't do it. This is to compare the new value when we move forward with the previous ones. At the end, to the
+// answer we will add the greater value of the Deque.
