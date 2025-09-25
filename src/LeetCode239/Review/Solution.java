@@ -35,8 +35,9 @@ class Solution {
     }
 }
 
-// My thoughts, this is a sliding window problem, we need to return the max value of each window from the very left to
-// the very right of the array. To solve we will use a Deque, we will save the values from the window but when we
-// already have values there we will evaluate if the index value is greater if it is we will add to our deque, but if is
-// not we won't do it. This is to compare the new value when we move forward with the previous ones. At the end, to the
-// answer we will add the greater value of the Deque.
+// This problem is about finding the maximum value in each sliding window of size k across the array. To solve it, we
+// use a Deque that stores indices in decreasing order of their corresponding values. At each step, we remove indices
+// that are out of the current window and also remove from the back any indices whose values are smaller than the
+// current element, since they can no longer be maximum candidates. We then add the current index, and once the window
+// is fully formed (i >= k - 1), the value at the front of the Deque represents the maximum for that window and is
+// stored in the result array.
