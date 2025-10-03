@@ -46,3 +46,7 @@ class MinStack {
  * int param_3 = obj.top();
  * int param_4 = obj.getMin();
  */
+
+// My thoughts: To solve the problem in O(1) time, we will save a Node with three values: the value, the min value and
+// the reference to next value. Why this approach? Because here we are using a Stack with LIFO (Last In First Out), with
+// that we can use it to solve the problem easy.
