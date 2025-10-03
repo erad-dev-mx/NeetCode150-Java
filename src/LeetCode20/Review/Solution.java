@@ -32,3 +32,9 @@ class Solution {
         return stack.isEmpty();
     }
 }
+
+// My thoughts: To solve the problem we will use two DS: HashMap and Stack. In the HashMap we will save all the brackets
+// values setting key as the close bracket and value as the open bracket. In the Stack we will set all the open brackets
+// of the string (that's what happened in the first if). If we found a close bracket we will validate if the topElement
+// of the stack is equal to the value of that key if it is not, we will return false because that means, is not a valid
+// string. At the end, if the stack is empty it means that it is a valid string.
