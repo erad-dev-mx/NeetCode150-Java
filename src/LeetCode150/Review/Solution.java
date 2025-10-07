@@ -34,3 +34,7 @@ class Solution {
         };
     }
 }
+
+// My thoughts: To solve this problem we will use a Stack, if there is a number we will push to our stack but if it is
+// an operator we will pop the top-two values to do the operation and, we will add the result in our stack to keep track
+// of the value. This solution is quite straight forward and a very elegant in my opinion.
