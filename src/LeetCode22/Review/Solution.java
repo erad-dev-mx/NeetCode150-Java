@@ -30,3 +30,7 @@ class Solution {
         }
     }
 }
+
+// My thoughts: To solve this problem we will use backtracking (visually it is possible to see it as a tree). We will
+// evaluate three conditions if the open value is less than max we can add an open parenthesis and y close is less than
+// open we can add a close parenthesis (with this visually is better to imagine as a tree).
