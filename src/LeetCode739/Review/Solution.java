@@ -19,3 +19,8 @@ class Solution {
         return answer;
     }
 }
+
+// My thoughts: We will use a Stack to keep track of each index from the temperatures array. So we will start running
+// through the array if we found a warmer temperature we will simply do a substraction with the index and put the
+// result in the answer. If we don't found we need to add the value to the stack until we found something that satisfied
+// the condition.
