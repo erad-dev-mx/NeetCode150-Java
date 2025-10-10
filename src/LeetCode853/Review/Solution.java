@@ -26,3 +26,10 @@ class Solution {
         return count;
     }
 }
+
+// My thoughts: To solve this problem the first thing we need to do is to calculate how much time do the car need to
+// reach to end with this simple formula: target - position of car divided by speed of car. Having that we will order
+// the 2D array and with that is going to be simple to know if there is a fleet. How to know if there is a fleet?
+// If the number which is at the top of the fleet (not the top of al cars) is greater than the number that follows it
+// means is going to be part of the same fleet, why? because it means that previous number is faster but is impossible
+// to overrun.
