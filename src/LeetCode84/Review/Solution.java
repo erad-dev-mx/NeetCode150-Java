@@ -7,7 +7,7 @@ class Solution {
         int maxArea = 0;
         Stack<Integer> stack = new Stack<>();
 
-        for (int i = 0; i < heights.length; i++) {
+        for (int i = 0; i <= heights.length; i++) {
             int currentHeight = (i == heights.length) ? 0 : heights[i];
 
             while (!stack.isEmpty() && currentHeight < heights[stack.peek()]) {
