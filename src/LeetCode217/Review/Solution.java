@@ -2,6 +2,7 @@ package LeetCode217.Review;
 
 import java.util.HashSet;
 
+// https://leetcode.com/problems/contains-duplicate/
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         HashSet<Integer> seenNumbers = new HashSet<>();
