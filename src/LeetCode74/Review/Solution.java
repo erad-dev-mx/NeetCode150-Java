@@ -24,3 +24,6 @@ class Solution {
         return false;
     }
 }
+
+// My thoughts: To solve this problem in the right way it is necessary to take advantage of the sorting 2D array. We can
+// use the 2D array as a normal one because is order in non-decreasing order. The only key is to get the midValue.
