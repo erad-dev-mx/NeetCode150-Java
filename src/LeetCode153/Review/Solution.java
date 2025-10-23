@@ -26,3 +26,10 @@ class Solution {
         return answer;
     }
 }
+
+// My thoughts: To solve the problem in O(log n) time we will use a binary search but with a twist. Since the array is
+// rotated x times, we will need to evaluate while left is less or equal to right we can iterate through all the array
+// validating which of the left or right values are less than the other to keep track of the minimum value. In the same
+// iteration we will get the mid, and also we will compare which one is lesser if left or mid. To move our pointers, we
+// will check if left value is less than equal to mid we will move our left pointer (we will ignore the first part of
+// the array), else we will update our right pointer (we will ignore the second part of the array).
