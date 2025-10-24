@@ -28,3 +28,8 @@ class Solution {
         return -1;
     }
 }
+
+// To solve the problem, we use binary search since the array is sorted but rotated. We calculate the middle. If it's
+// equal to the target, return mid. If the left half (nums[left] <= nums[mid]) is sorted, check if the target lies
+// between nums[left] and nums[mid]: If it does, move the right pointer to mid. Otherwise, move the left pointer to
+// mid + 1. If the right half is sorted, apply the same logic symmetrically
