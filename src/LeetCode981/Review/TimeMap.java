@@ -29,3 +29,7 @@ class TimeMap {
  * obj.set(key,value,timestamp);
  * String param_2 = obj.get(key,timestamp);
  */
+
+// My thoughts: To solve the problem we will use as our main DS a HashMap in the key part we will set the key itself,
+// for value part we will instance a Binary TreeMap (because we can search on it in logarithmic time), as key of the
+// map we will put the timestamp and the value as value itself.
