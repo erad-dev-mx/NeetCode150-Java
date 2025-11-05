@@ -39,3 +39,8 @@ class Solution {
         return 0;
     }
 }
+
+// My thoughts: To solve this problem we use binary search on the smaller array, dividing both arrays into two parts so
+// that all numbers on the left are smaller than those on the right; once we find the correct split, if the total length
+// is even we take the average of the two middle values, otherwise the median is the largest value on the left side,
+// making the solution fast and efficient without merging the arrays.
