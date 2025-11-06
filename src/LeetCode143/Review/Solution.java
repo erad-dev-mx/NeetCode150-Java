@@ -62,3 +62,9 @@ class ListNode {
         this.next = next;
     }
 }
+
+// My thoughts: To solve this problem we will implement three big steps: 1: Find the middle of the LinkedList, how can
+// we reach to the middle? With a slow-fast pointer approach, we will use two pointer the slow one will advance one
+// forward and the other fast will advance two places; having the middle we will move to the 2: Reverse Second
+// LinkedList, here we will reverse using a temp variable and changing the arrows of every tail, finally 3: It is
+// necessary to create a one single List and, we will stop merging the arrays when the second arrives to the null one.
