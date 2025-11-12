@@ -1,5 +1,7 @@
 package LeetCode19.Review;
 
+import java.util.List;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -12,7 +14,24 @@ package LeetCode19.Review;
  */
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode dummy = new ListNode(1);
+        dummy.next = head;
 
+        ListNode frontPointer = dummy;
+        ListNode backPointer = dummy;
+
+        for (int i = 0; i <= n; i++) {
+            frontPointer = frontPointer.next;
+        }
+
+        while (frontPointer != null) {
+            frontPointer = frontPointer.next;
+            backPointer = backPointer.next;
+        }
+
+        backPointer.next = backPointer.next.next;
+
+        return dummy.next;
     }
 }
 
