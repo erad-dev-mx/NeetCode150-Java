@@ -51,3 +51,9 @@ class ListNode {
         this.next = next;
     }
 }
+
+// My thoughts: To solve this problem in just one run, it is necessary to implement a two-pointer approach with a front
+// pointer and a back pointer. So first we create a dummy node before the start of the list to simplify the cases where
+// the head is eliminated. Then we will move our front pointer (n + 1), with  this we will create a distance between
+// both pointers. At the same time we will move our pointer until front pointer reaches to the end of the list (null).
+// Finally, we will remove the reference to the eliminated node and we will return the head.
