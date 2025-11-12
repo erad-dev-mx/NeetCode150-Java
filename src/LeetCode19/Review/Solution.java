@@ -1,6 +1,6 @@
 package LeetCode19.Review;
 
-import java.util.List;
+// https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 
 /**
  * Definition for singly-linked list.
