@@ -1,5 +1,11 @@
-package LeetCode138.Review;/*
-// Definition for a Node.
+package LeetCode138.Review;
+
+class Solution {
+    public Node copyRandomList(Node head) {
+        
+    }
+}
+
 class Node {
     int val;
     Node next;
@@ -9,12 +15,5 @@ class Node {
         this.val = val;
         this.next = null;
         this.random = null;
-    }
-}
-*/
-
-class Solution {
-    public Node copyRandomList(Node head) {
-        
     }
 }
