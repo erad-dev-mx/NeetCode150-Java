@@ -2,6 +2,8 @@ package LeetCode138.Review;
 
 import java.util.HashMap;
 
+// https://leetcode.com/problems/copy-list-with-random-pointer/
+
 class Solution {
 
     HashMap<Node, Node> visitedNode = new HashMap<>();
