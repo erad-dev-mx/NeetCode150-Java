@@ -1,8 +1,22 @@
 package LeetCode138.Review;
 
+import java.util.HashMap;
+
 class Solution {
+
+    HashMap<Node, Node> visitedNode = new HashMap<>();
+
     public Node copyRandomList(Node head) {
-        
+        if (head == null) return null;
+
+        if (this.visitedNode.containsKey(head)) return this.visitedNode.get(head);
+
+        Node node = new Node(head.val);
+        this.visitedNode.put(head, node);
+        node.next = copyRandomList(head.next);
+        node.random = copyRandomList(head.random);
+
+        return node;
     }
 }
 
