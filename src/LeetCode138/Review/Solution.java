@@ -33,3 +33,9 @@ class Node {
         this.random = null;
     }
 }
+
+// My thoughts: The solution uses a HashMap to remember which nodes have already been copied, so the program does not
+// copy the same node twice and does not enter an infinite loop. The method works by checking if the current node is
+// null, then checking if it was already copied, and if not, it creates a new node with the same value. After that, it
+// copies the next and random pointers using recursion. In the end, it returns a new list that is a full and correct
+// copy of the original.
