@@ -54,3 +54,8 @@ class ListNode {
         this.next = next;
     }
 }
+
+// My thoughts: To solve this problem it is necessary to use a dummy list that will we point to the answer. Also, we
+// will use a carry variable that will contain just 1 or 0 (because 9 + 9 + 1 is max 19). We start our while loop
+// checking if l1 or l2 are not null and also check if carry is it different to 0. We will calculate the respective
+// values of x and y, then we will sum both the values plus the carry. At the end, we will move the pointers.
