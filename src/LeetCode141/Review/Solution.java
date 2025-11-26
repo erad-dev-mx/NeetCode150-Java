@@ -40,3 +40,7 @@ class ListNode {
         next = null;
     }
 }
+
+// My thoughts: To solve this problem using a O(1) in space complexity we will use a slow-fast algorithm, we will be
+// jumping with slow pointer one by one, with fast pointer we are going to jump twice. If in a moment there are equal
+// we will return true.
