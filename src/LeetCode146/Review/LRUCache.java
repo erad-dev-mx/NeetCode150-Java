@@ -2,6 +2,8 @@ package LeetCode146.Review;
 
 import java.util.HashMap;
 
+// https://leetcode.com/problems/lru-cache/
+
 class LRUCache {
     private static class Node {
         int key;
