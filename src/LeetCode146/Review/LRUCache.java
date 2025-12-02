@@ -77,3 +77,9 @@ class LRUCache {
  * int param_1 = obj.get(key);
  * obj.put(key,value);
  */
+
+// My thoughts: The LRUCache stores key–value pairs and remembers which items were used most recently. When you get or
+// put a value, the item is moved to the front, meaning it is the most recently used. If the cache becomes full, and you
+// try to add a new item, it removes the least recently used one—the item that has not been used for the longest time.
+// It uses a HashMap to find items quickly and a doubly linked list to keep track of the usage order. This lets the
+// cache do all operations fast, in constant time.
