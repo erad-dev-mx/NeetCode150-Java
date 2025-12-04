@@ -77,3 +77,8 @@ class ListNode {
         this.next = next;
     }
 }
+
+// My thoughts: This problem is about reversing a linked list in groups of size k. We take the list and look at the
+// first k nodes. If there are at least k nodes, we reverse these k nodes. Then we move to the next k nodes and do the
+// same thing again. If the last group has fewer than k nodes, we do NOT reverse that part. The goal is to return the
+// head of the modified list.
