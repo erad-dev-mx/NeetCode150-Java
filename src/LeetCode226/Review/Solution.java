@@ -47,3 +47,6 @@ class TreeNode {
         this.right = right;
     }
 }
+
+// My thoughts: To solve this problem we use a recursive solution. Swaping the values of each TreeNode, and at the end
+// we will return the root until there is a null where we cannot return.
