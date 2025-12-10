@@ -48,3 +48,7 @@ class TreeNode {
         this.right = right;
     }
 }
+
+// My thoughts: To find the maximum depth of a binary tree we will return 0 if its equal to null, if we found values it
+// is necessary to compare both to see which is the larger one, and we will add 1 to the current node to mark the level.
+// Basically to solve the problem we use recursion.
