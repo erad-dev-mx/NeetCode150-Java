@@ -24,7 +24,7 @@ class Solution {
     }
 
     private int getHeight(TreeNode node) {
-        if (node == null) return 0;
+        if (node == null) return 0; // Base case
 
         int leftHeight = getHeight(node.left);
         int rightHeight = getHeight(node.right);
@@ -54,3 +54,9 @@ class TreeNode {
         this.right = right;
     }
 }
+
+// My thoughts: To calculate the diameter of a binary tree, we need to find the longest path between any two nodes. This
+// path can go through the current node, so we look at the height of the left subtree and the height of the right
+// subtree. The sum of these two heights is a possible diameter. We use recursion to compute the height of each subtree,
+// and while returning back up (backtracking), we update the maximum diameter found so far. The function getHeight
+// returns the height of a node, and at the same time it helps update the global diameter value.
