@@ -57,3 +57,10 @@ class TreeNode {
         this.right = right;
     }
 }
+
+// My thoughts: To determinate whether a binary tree is balance or not, we need to ensure that the height difference
+// between left and right subtrees of every node is no more than 1. . To check this, we recursively compute the height
+// of each subtree. For every node, we compare the heights of its left and right children; if the difference is greater
+// than 1, the tree is not balanced. Otherwise, we continue checking the left and right subtrees. The getHeight function
+// returns the height of a subtree, which is used to evaluate the balance condition at each node. Although this solution
+// works, it has a drawback: heights are recomputed multiple times, resulting in O(n^2) complexity in the worst case.
