@@ -65,3 +65,7 @@ class TreeNode {
         this.right = right;
     }
 }
+
+// My thoughts: To solve this problem we use a BFS approach (Breadth First Search), this is technique to traverse a Tree
+// where we traverse all nodes of the same level before traversing the next level. So, with that idea we will add to our
+// result the first element of our Queue (because of FIFO) when we run each level.
