@@ -46,3 +46,6 @@ class TreeNode {
         this.right = right;
     }
 }
+
+// My thoughts: To solve this problem we will use recursion to validate each node of both binary trees. This approach
+// has a O(n) time complexity and O(log n) space complexity.
