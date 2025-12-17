@@ -57,3 +57,8 @@ class TreeNode {
         this.right = right;
     }
 }
+
+// My thoughts: To solve this problem we will use recursion and backtracking with DFS (Depth-First Search) a method used
+// to explore all the nodes in a tree by going as deep as possible along each branch before moving to the next one. It
+// starts at the root node and visits every node in the tree. With DFS, we can have a track of all the values to
+// determinate if is a good node or not.
