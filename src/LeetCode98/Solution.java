@@ -54,4 +54,6 @@ class TreeNode {
     }
 }
 
-// In-Order Traversal: Left Subtree -> Node -> Right Subtree
+// My thoughts: To solve this problem we will use In-Order Traversal. With this method to traverse a tree we will start
+// with its Left Subtree -> then Node itself -> and finally its Right Subtree. To validate if it is a valid Binary
+// Search Tree we will see if the output of our traverse is in order if is not we will return false.
