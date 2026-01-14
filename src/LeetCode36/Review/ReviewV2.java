@@ -7,7 +7,10 @@ public class ReviewV2 {
     // We create 27 HashSets for each row, col and sub-box
     // Run the Sudoku in each cell, using loops. If character is equal to “.” we skip, then we check col, row
     // and sub-box.
-    // To validate sub-box we use this formula to know in which square we are validating:
+    // To validate sub-box we use this formula to know in which square we are validating
+    // 0 | 1 | 2
+    // 3 | 4 | 5
+    // 6 | 7 | 8
     // int boxNumber = (r / 3) * 3 + c / 3 // Example: (r=4, c=7) => (4/3) * 3 + 7/3 = 1 * 3 + 2 = 3 + 2 = 5
 
     public boolean isValidSudoku(char[][] board) {
