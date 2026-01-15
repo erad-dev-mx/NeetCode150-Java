@@ -21,7 +21,7 @@ public class Solution {
     }
 
     // Decodes a single string to a list of strings.
-    public List<String> encode(String s) {
+    public List<String> decode(String s) {
         if (s.equals(Character.toString((char) 258))) return new ArrayList();
 
         String separator = Character.toString((char) 257);
