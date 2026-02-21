@@ -1,5 +1,8 @@
 package LeetCode239.Review;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 public class ReviewV2 {
     /*
     nums = [1, 3, -1, -3, 5, 3], k = 3
@@ -18,6 +21,29 @@ public class ReviewV2 {
     // i=1: 2 > 1 -> dq[1], res[2]
     // i=2: 3 > 2 -> dq[2], res[2, 3]
     public int[] maxSlidingWindow(int[] nums, int k) {
+        if (nums == null || nums.length == 0 || k <= 0) return new int[0];
 
+        int n = nums.length;
+        int[] result = new int[n - k + 1];
+        Deque<Integer> deque = new LinkedList<>();
+
+
+        for (int i = 0; i < n; i++) {
+            while (!deque.isEmpty() && deque.peek() < i - k + 1) {
+                deque.poll(); // Remove indices that are out of the window
+            }
+
+            while (!deque.isEmpty() && nums[deque.peekLast()] < nums[i]) {
+                deque.pollLast(); // Remove indices whose corresponding values are less than nums[i]
+            }
+
+            deque.offer(i); // Add current index to deque
+
+            if (i >= k - 1) {
+                result[i - k + 1] = nums[deque.peek()];
+            }
+        }
+
+        return result;
     }
 }
