@@ -1,7 +1,21 @@
 package LeetCode155.Review.ReviewV2;
 
+// Out stack needs to support: push, pop, top and getMin
+// All in o(1) time
+
+// Push a value onto the stack.
+// Each node stores:
+//  - its value
+//  - the minimum value up to this node
+// If the stack is empty:
+//  - The minimum is the value itself.
+// Otherwise:
+//  - The new minimum is min(val, current head.min)
+
 class MinStack {
+    // Top of stack
     private Node head;
+
     public MinStack() {}
 
     public void push(int val) {
@@ -24,6 +38,11 @@ class MinStack {
         return head.min;
     }
 
+    /*
+    * val: actual value
+    * min: min value up to this node
+    * next: reference to next node
+    * */
     private class Node {
         int val;
         int min;
