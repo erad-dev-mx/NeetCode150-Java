@@ -1,5 +1,7 @@
 package LeetCode150.Review;
 
+import java.util.Stack;
+
 public class ReviewV2 {
     // Operators: "+", "-", "/", "*"
     // Operand: 1 - N
@@ -16,6 +18,37 @@ public class ReviewV2 {
     // isOperator(*) -> 3 * 3 = 9 -> Stack(9) -> 9
     // Time Complexity: O(N), Space Complexity: O(N)
     public int evalRPN(String[] tokens) {
+        Stack<Integer> stack = new Stack<>();
 
+        for (String t : tokens) {
+            if (isOperator(t)) {
+                int b = stack.pop();
+                int a = stack.pop();
+                int result = operation(t, a, b);
+                stack.push(result);
+            } else {
+                stack.push(Integer.parseInt(t));
+            }
+        }
+
+        return stack.pop();
+    }
+
+    private boolean isOperator(String operator) {
+        return operator.equals("+") || operator.equals("-") || operator.equals("*") || operator.equals("/");
+    }
+
+    private int operation(String operator, int a, int b) {
+        int operationResult = 0;
+
+        switch (operator) {
+            case "+" -> operationResult = a + b;
+            case "-" -> operationResult = a - b;
+            case "/" -> operationResult = a / b;
+            case "*" -> operationResult = a * b;
+            default -> operationResult = 0;
+        }
+
+        return operationResult;
     }
 }
