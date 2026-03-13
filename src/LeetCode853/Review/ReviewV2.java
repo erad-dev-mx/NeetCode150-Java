@@ -1,6 +1,8 @@
-package LeetCode853.Review.ReviewV2;
+package LeetCode853.Review;
 
-class Solution {
+import java.util.Arrays;
+
+class ReviewV2 {
     // Create a list of pairs (position, timeToTarget)
     // Sort the prev list by position in descending order
     // count = 0 and maxTimeNeeded = 0
@@ -29,7 +31,7 @@ class Solution {
             cars[i][1] = (double) (target - position[i]) / speed[i];
         }
 
-        Arrays.sort(cars, (a,b) -> Double.compare(b[0], a[0]));
+        Arrays.sort(cars, (a, b) -> Double.compare(b[0], a[0]));
 
         int count = 0;
         double prevTime = 0;

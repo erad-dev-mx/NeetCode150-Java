@@ -1,8 +1,8 @@
-package LeetCode739.Review.ReviewV2;
+package LeetCode739.Review;
 
 import java.util.Stack;
 
-class Solution {
+class ReviewV2 {
     // [73,74,75,71,69,72,76,73]
     // i = 0 (73): Empty stack we push index 0 => stack = [0]
     // i = 1 (74): 74 > temp[stack.peek()] (74 > 73)? YES => Pop index 0. ans[0] = 1 - 0 = 1.
