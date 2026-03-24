@@ -1,5 +1,7 @@
 package LeetCode84.Review;
 
+import java.util.Stack;
+
 public class ReviewV2 {
     // I use an increasing stack
     // When I see a smaller height, I calculate area for previous bars.
@@ -23,6 +25,21 @@ public class ReviewV2 {
     // pop all remaining:
     // compute remaining areas
     public int largestRectangleArea(int[] heights) {
+        int maxArea = 0;
+        Stack<Integer> stack = new Stack<>();
+        int n = heights.length;
 
+        for (int i = 0; i <= n; i++) {
+            int currentHeight = (i == n) ? 0 : heights[i];
+
+            while (!stack.isEmpty() && currentHeight < heights[stack.peek()]) {
+                int height = heights[stack.pop()];
+                int width = stack.isEmpty() ? i : i - stack.peek() - 1;
+                maxArea = Math.max(maxArea, height * width);
+            }
+            stack.push(i);
+        }
+
+        return maxArea;
     }
 }
