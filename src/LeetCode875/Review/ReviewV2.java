@@ -12,5 +12,32 @@ public class ReviewV2 {
     // 3.- l = 4 -> 8, r = 5 -> 8, mid = 4 -> 8 so here 8 = 8 we are in expected result
     // Just to be sure we check the prev position to see if it's the first 8
     public int minEatingSpeed(int[] piles, int h) {
+        int left = 1;
+        int right = 1;
+
+        for (int pile : piles) {
+            right = Math.max(pile, right);
+        }
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+
+            if (canFinish(piles, mid, h)) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return left;
+    }
+
+    private boolean canFinish(int[] piles, int speed, int h) {
+        int hours = 0;
+        for (int pile : piles) {
+            hours += (int) Math.ceil((double) pile / speed);
+        }
+
+        return hours <= h;
     }
 }
