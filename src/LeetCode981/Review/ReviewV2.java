@@ -1,5 +1,9 @@
 package LeetCode981.Review;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
 // key -> value + timeStamp
 // set ("p", "v", 1)
 // set ("p", "j", 2)
@@ -22,17 +26,23 @@ package LeetCode981.Review;
 //  Time complexity: O(Log(N))
 // Space complexity: O(K * N)
 class TimeMapReviewV2 {
+    private Map<String, TreeMap<Integer, String>> map;
 
     public TimeMapReviewV2() {
-
+        map = new HashMap<>();
     }
 
     public void set(String key, String value, int timestamp) {
-
+        map.computeIfAbsent(key, k -> new TreeMap<>()).put(timestamp, value);
     }
 
     public String get(String key, int timestamp) {
-
+        TreeMap<Integer, String> treeMap = map.get(key);
+        if (treeMap == null) {
+            return "";
+        }
+        Map.Entry<Integer, String> entry = treeMap.floorEntry(timestamp);
+        return entry == null ? "" : entry.getValue();
     }
 }
 
