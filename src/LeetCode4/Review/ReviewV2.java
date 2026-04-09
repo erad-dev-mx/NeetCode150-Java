@@ -25,19 +25,16 @@ public class ReviewV2 {
     // y: [7, 11, 18, 19, 21, 25] (len=6)
     // totalElements = 10 (Even)
     // leftHalfSize = (4 + 6 + 1) / 2 = 5
-    //
     // Iteration 1:
     // start = 0, end = 4 -> partX = 2, partY = 5 - 2 = 3
     // LEFT:  x[1,3] (max=3), y[7,11,18] (max=18)
     // RIGHT: x[8,9] (min=8), y[19,21,25] (min=19)
     // Check: 3 <= 19 (OK), but 18 > 8 (Too high!). Move start = partX + 1 = 3
-    //
     // Iteration 2:
     // start = 3, end = 4 -> partX = 3, partY = 5 - 3 = 2
     // LEFT:  x[1,3,8] (max=8), y[7,11] (max=11)
     // RIGHT: x[9] (min=9), y[18,19,21,25] (min=18)
     // Check: 8 <= 18 (OK), 11 <= 9 (Wait, 11 > 9!). Move start = partX + 1 = 4
-    //
     // Iteration 3:
     // start = 4, end = 4 -> partX = 4, partY = 5 - 4 = 1
     // LEFT:  x[1,3,8,9] (max=9), y[7] (max=7)
