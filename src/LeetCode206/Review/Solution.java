@@ -12,6 +12,6 @@ package LeetCode206.Review;
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        
+
     }
 }
