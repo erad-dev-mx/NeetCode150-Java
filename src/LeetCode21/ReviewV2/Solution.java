@@ -19,7 +19,28 @@ class Solution {
     // Pointers[4,4] => m = (1) - (1) - (2) - (3) - (4) - (4)
     // Dummy will point to m head
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode dummy = new ListNode(1);
+        ListNode merge = dummy;
 
+        while (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                merge.next = list1;
+                list1 = list1.next;
+            } else {
+                merge.next = list2;
+                list2 = list2.next;
+            }
+            merge = merge.next;
+        }
+
+        // For the list with remaining elements
+        if (merge.next == list1 && list1 == null) {
+            merge.next = list2;
+        } else {
+            merge.next = list1;
+        }
+
+        return dummy.next;
     }
 }
 
