@@ -3,11 +3,11 @@ package LeetCode143.Review;
 /**
  * Definition for singly-linked list.
  * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * int val;
+ * ListNode next;
+ * ListNode() {}
+ * ListNode(int val) { this.val = val; }
+ * ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
 class Solution {
@@ -27,13 +27,59 @@ class Solution {
     // Result: prev points to (6), which is the head of the reversed half.
     // Then, merge both LinkedList
     public void reorderList(ListNode head) {
+        if (head == null) return;
+
+        // Find middle
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        // Reverse second list
+
+        ListNode prev = null;
+        ListNode curr = slow;
+        ListNode temp;
+
+        while (curr != null) {
+            temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
+        }
+
+        // Merge both ListNode
+        ListNode first = head;
+        ListNode second = prev;
+
+        while (second.next != null) {
+            temp = first.next;
+            first.next = second;
+            first = temp;
+
+            temp = second.next;
+            second.next = first;
+            second = temp;
+        }
     }
 }
 
- class ListNode {
-     int val;
-     ListNode next;
-     ListNode() {}
-     ListNode(int val) { this.val = val; }
-     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- }
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
