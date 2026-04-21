@@ -15,6 +15,8 @@ class Node {
 }
 */
 
+import java.util.HashMap;
+
 // When we copy we need to avoid cycles
 // Rather than treating as a LinkList problem we should treat as a Graph one
 // Using DFS
