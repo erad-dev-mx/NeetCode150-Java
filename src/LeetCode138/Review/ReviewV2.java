@@ -47,7 +47,7 @@ class ReviewV2 {
 
         if (this.visitedNode.containsKey(head)) return this.visitedNode.get(head);
 
-        Node node = new Node(head.val, null, null);
+        Node node = new Node(head.val);
         this.visitedNode.put(head, node);
         node.next = copyRandomList(head.next);
         node.random = copyRandomList(head.random);
