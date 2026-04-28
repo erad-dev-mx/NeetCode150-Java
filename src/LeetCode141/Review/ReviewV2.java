@@ -21,8 +21,8 @@ public class ReviewV2 {
         ListNode slow = head;
         ListNode fast = head.next;
 
-        while (fast != null || fast.next != null) {
-            if (fast.next == null) return false;
+        while (slow != null || fast != null) {
+            if (fast == null || fast.next == null) return false;
 
             if (fast == slow) return true;
 
