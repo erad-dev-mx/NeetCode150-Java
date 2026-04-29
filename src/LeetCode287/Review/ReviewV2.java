@@ -23,5 +23,20 @@ public class ReviewV2 {
     // 3. slow = nums[5] (4), fast = nums[1] (3)
     // 4. slow = nums[4] (2), fast = nums[3] (4)  <-- MEET AGAIN
     public int findDuplicate(int[] nums) {
+        int slow = nums[0];
+        int fast = nums[nums[0]];
+
+        while (slow != fast) {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        }
+
+        slow = 0;
+        while (slow != fast) {
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+
+        return slow;
     }
 }
