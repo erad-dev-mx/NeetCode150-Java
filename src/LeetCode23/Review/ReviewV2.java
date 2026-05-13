@@ -1,5 +1,7 @@
 package LeetCode23.Review;
 
+import java.util.PriorityQueue;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -17,6 +19,22 @@ public class ReviewV2 {
     // mergeList = 1,3,4,...
     // Time Complexity = O (n log n), Space Complexity = O (n)
     public ListNode mergeKLists(ListNode[] lists) {
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        for (ListNode list : lists) {
+            while (list != null) {
+                minHeap.add(list.val);
+                list = list.next;
+            }
+        }
 
+        ListNode dummy = new ListNode(1);
+        ListNode merge = dummy;
+
+        while (!minHeap.isEmpty()) {
+            merge.next = new ListNode(minHeap.remove());
+            merge = merge.next;
+        }
+
+        return dummy.next;
     }
 }
