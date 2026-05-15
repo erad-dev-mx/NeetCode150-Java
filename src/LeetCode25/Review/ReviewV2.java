@@ -11,6 +11,25 @@ package LeetCode25.Review;
  * }
  */
 public class ReviewV2 {
+    // (1) -> (2) -> (3) -> (4) -> (5) -> null, k = 6
+    // k is greater than our numbers presents, so we return the same list
+    // (1) -> (2) -> (3) -> (4) -> (5) -> null, k = 2
+    // (2) -> (1) -> (3) -> (4) -> (5) -> null
+    // (2) -> (1) -> (4) -> (3) -> (5) -> null
+
+    // How to perform the reverse operation?
+    // head = (1) -> (2) -> (3) -> (4) -> null
+    // newHead = null, ptrNode = head, nextNode = null
+    // nextNode = ptrNode.next, ptr.next = newHead, newHead = ptrNode, ptrNode = nextNode
+    // head = (1) [ptrNode] -> (2) [nextNode] -> (3) -> (4) -> null
+    // newHead = (1)
+    // head = (1) -> (2) [ptrNode] -> (3) [nextNode] -> (4) -> null
+    // newHead = (2) -> (1)
+    // head = (1) -> (2) -> (3)  [ptrNode] -> (4) [nextNode] -> null
+    // newHead = (3) -> (2) -> (1) ... etc
+
+    // To do an optimal solution we could use recursion - Time: O(n), Space: O(n)
+    // If we want something better we could use iterative approach - Time (n), Space O(1)
     public ListNode reverseKGroup(ListNode head, int k) {
 
     }
