@@ -23,6 +23,14 @@ public class ReviewV2 {
     // [1,3,2,7,6,4,5]
     // [1,3,2,7,6,5,4] => This is the answer
     public TreeNode invertTree(TreeNode root) {
+        if (root == null) return null;
 
+        TreeNode right = invertTree(root.right);
+        TreeNode left = invertTree(root.left);
+
+        root.left = right;
+        root.right = left;
+
+        return root;
     }
 }
