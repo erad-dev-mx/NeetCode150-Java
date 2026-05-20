@@ -18,6 +18,10 @@ import javax.swing.tree.TreeNode;
  * }
  */
 class ReviewV2 {
+    // Using recursion
+    // We will compare max(leftSide, rightSide)
+    // If leftSide is greater we add 1
+    // Else, we add 1 to rightSide
     public int maxDepth(TreeNode root) {
         
     }
