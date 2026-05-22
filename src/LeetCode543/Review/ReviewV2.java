@@ -16,6 +16,9 @@ package LeetCode543.Review;
  * }
  */
 public class ReviewV2 {
+    // Diameter = left_height + right_height
+    // Returns Height = Max(left, right) + 1
+    // Return the height, but update the global diameter in the process.
     public int diameterOfBinaryTree(TreeNode root) {
 
     }
