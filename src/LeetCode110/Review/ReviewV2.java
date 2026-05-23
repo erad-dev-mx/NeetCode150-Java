@@ -17,7 +17,13 @@ package LeetCode110.Review;
  */
 
 public class ReviewV2 {
+    // We need to check, both heights from left and right subtrees
+    // Recursion
+    // Base case: current == 0
+    // Recursive call: Traverse right child, then traverse left child
+    // counter for both heights
+    // Absolute Difference (leftHeigh - rightHeight) > 1 is INVALID
+    // The Height Balance Tree
     public boolean isBalanced(TreeNode root) {
-
     }
 }
