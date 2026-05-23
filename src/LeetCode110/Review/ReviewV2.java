@@ -22,7 +22,7 @@ public class ReviewV2 {
     // Base case: current == 0
     // Recursive call: Traverse right child, then traverse left child
     // counter for both heights
-    // Absolute Difference (leftHeigh - rightHeight) > 1 is INVALID
+    // Absolute Difference (leftHeight - rightHeight) > 1 is INVALID
     // The Height Balance Tree
     public boolean isBalanced(TreeNode root) {
         if (root == null) return true;
