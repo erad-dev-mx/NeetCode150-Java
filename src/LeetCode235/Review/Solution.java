@@ -22,7 +22,14 @@ class Solution {
     // The root value (5) is less than 6 & 9 so we focus in right side of subtree, then if we compare 7. p is less than
     // 7 but q is greater. We return 7 as our answer.
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        
+        int parentVal = root.val;
+        int pVal = p.val;
+        int qVal = q.val;
+
+        if (pVal > parentVal && qVal > parentVal) return lowestCommonAncestor(root.right, p , q);
+        if (pVal < parentVal && qVal < parentVal) return lowestCommonAncestor(root.left, p, q);
+
+        return root;
     }
 }
 
