@@ -30,8 +30,21 @@ class Solution {
     // Visiting the prev tree: 1, 3, 4, 5, 6, 8, 9
     // We will just check if the val + 1 is greater than val.
     // Traversal in first tree: 1, 3, 4, 5, 2 -> invalid, so we return false
+    public Integer prev;
+
     public boolean isValidBST(TreeNode root) {
-        
+        prev = null;
+        return inOrder(root);
+    }
+
+    public boolean inOrder(TreeNode root) {
+        if (root == null) return true;
+
+        if (!inOrder(root.left)) return false;
+        if (prev != null && root.val <= prev) return false;
+
+        prev = root.val;
+        return inOrder(root.right);
     }
 }
 
