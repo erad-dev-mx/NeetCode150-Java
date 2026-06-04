@@ -16,7 +16,13 @@ package LeetCode230;
  * }
  */
 class Solution {
-    // 
+    //      (5)
+    //  (3)       (8)
+    // (1) (4) null (8)
+    // root = [5, 3, 8, 1, 4, null, 8]
+    // If we traverse in this way: 1, 3, 4, 5, 8, 9
+    // Now we can get easy the kth position
+    // How to do that? With In Order Traversal (Left -> Node -> Right)
     public int kthSmallest(TreeNode root, int k) {
         
     }
