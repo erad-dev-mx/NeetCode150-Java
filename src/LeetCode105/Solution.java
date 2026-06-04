@@ -16,6 +16,20 @@ package LeetCode105;
  * }
  */
 class Solution {
+    //       (5)
+    //   (3)     (8)
+    // (1) (7) (6) (9)
+    // PreOrder Traversal: Root -> Left -> Right - 5, 3 , 1, 7, 8, 6, 9
+    // InOrder Traversal: Left -> Root -> Right - 1, 3, 7, 5, 6, 8, 9
+    //      (5)
+    // (3)          (8)
+    // null null  (6)  (9)
+    // PreOrder: 5, 3, 8, 6, 9
+    // InOrder: 3, 5, 6, 8, 9
+    // We can see PreOrder first value is the root, then we see left values from 5 in InOrder are left side
+    // Ans: 5, 3, null, null
+    // PreOrder now 8 is the root, we know the values around that number are left and right side
+    // Ans: 5, 3, null, null, 8, 6, null, null, 9, null, null
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         
     }
