@@ -24,7 +24,18 @@ class Solution {
     // Now we can get easy the kth position
     // How to do that? With In Order Traversal (Left -> Node -> Right)
     public int kthSmallest(TreeNode root, int k) {
-        
+        ArrayList<Integer> nums = inOrder(root, new ArrayList<Integer>());
+        return nums.get(k - 1);
+    }
+
+    private ArrayList<Integer> inOrder(TreeNode root, ArrayList<Integer> arr) {
+        if (root == null) return arr;
+
+        inOrder(root.left, arr);
+        arr.add(root.val);
+        inOrder(root.right, arr);
+
+        return arr;
     }
 }
 
