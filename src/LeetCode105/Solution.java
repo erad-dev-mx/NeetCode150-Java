@@ -1,5 +1,8 @@
 package LeetCode105;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -30,10 +33,31 @@ class Solution {
     // Ans: 5, 3, null, null
     // PreOrder now 8 is the root, we know the values around that number are left and right side
     // Ans: 5, 3, null, null, 8, 6, null, null, 9, null, null
+
+    int preOrderIndex;
+    Map<Integer, Integer> inOrderIndexMap;
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        
+        preOrderIndex = 0;
+        inOrderIndexMap = new HashMap<>();
+
+        for (int i = 0; i < inorder.length; i++) {
+            inOrderIndexMap.put(inorder[i], i);
+        }
+
+        return arrayToTree(preorder, 0, preorder.length - 1);
     }
-}
+
+    private TreeNode arrayToTree(int[] preorder, int left, int right) {
+        if (left > right) return null;
+
+        int rootValue = preorder[preOrderIndex++];
+
+        TreeNode root = new TreeNode(rootValue);
+        root.left = arrayToTree(preorder, left, inOrderIndexMap.get(rootValue) - 1);
+        root.right = arrayToTree(preorder, inOrderIndexMap.get(rootValue) + 1, right);
+
+        return root;
+    }
 
 class TreeNode {
     int val;
