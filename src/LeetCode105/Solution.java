@@ -1,7 +1,5 @@
 package LeetCode105;
 
-import javax.swing.tree.TreeNode;
-
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -20,5 +18,18 @@ import javax.swing.tree.TreeNode;
 class Solution {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         
+    }
+}
+
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 }
