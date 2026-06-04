@@ -58,6 +58,7 @@ class Solution {
 
         return root;
     }
+}
 
 class TreeNode {
     int val;
