@@ -1,5 +1,9 @@
 package LeetCode297;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -23,15 +27,41 @@ package LeetCode297;
 //  (2)     (3)
 // (4) (5)
 public class Codec {
-
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        
+        return recursiveSerialize(root, "");
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        
+        String[] strArray = data.split(",");
+        List<String> strList = new LinkedList<String>(Arrays.asList(strArray));
+        return recursiveDeserialize(strList);
+    }
+
+    private String recursiveSerialize(TreeNode root, String str) {
+        if (root == null) {
+            str += "null,";
+        } else {
+            str += str.valueOf(root.val) + ",";
+            str = recursiveSerialize(root.left, str);
+            str = recursiveSerialize(root.right, str);
+        }
+
+        return str;
+    }
+
+    private TreeNode recursiveDeserialize(List<String> strs) {
+        if (strs.get(0).equals("null")) {
+            strs.remove(0);
+            return null;
+        }
+        TreeNode root = new TreeNode(Integer.valueOf(strs.get(0)));
+        strs.remove(0);
+        root.left = recursiveDeserialize(strs);
+        root.right = recursiveDeserialize(strs);
+
+        return root;
     }
 }
 
