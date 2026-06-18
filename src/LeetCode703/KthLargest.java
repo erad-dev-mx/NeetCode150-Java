@@ -1,5 +1,7 @@
 package LeetCode703;
 
+import java.util.PriorityQueue;
+
 // k = 3, nums = [4, 5, 8, 2]
 // We will use Min-Heap (PriorityQueue) with k length
 // The root (peek) always contains kth largest element
@@ -18,12 +20,27 @@ package LeetCode703;
 // ans = [null, 4, 5, 5, 8, 8]
 class KthLargest {
 
+    private PriorityQueue<Integer> minHeap;
+    private int k;
+
     public KthLargest(int k, int[] nums) {
-        
+        this.k = k;
+        this.minHeap = new PriorityQueue<>(k);
+
+        for (int num : nums) {
+            add(num);
+        }
     }
-    
+
     public int add(int val) {
-        
+        if (minHeap.size() < k) {
+            minHeap.offer(val);
+        } else if (val > minHeap.peek()) {
+            minHeap.poll();
+            minHeap.offer(val);
+        }
+
+        return minHeap.peek();
     }
 }
 
