@@ -1,5 +1,7 @@
 package LeetCode1046;
 
+import java.util.PriorityQueue;
+
 class Solution {
     // [2, 7, 4, 1, 8, 1, 3]
     // heaviest = 8,7 => 8 - 7 = 1
@@ -21,6 +23,19 @@ class Solution {
     // If top 2 are same size, destroy both them and move forward
     // If not, we calculate delta and put back the difference in our Heap
     public int lastStoneWeight(int[] stones) {
-        Pro
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
+
+        for (int stone : stones) {
+            maxHeap.add(stone);
+        }
+
+        while (maxHeap.size() > 1) {
+            int y = maxHeap.poll();
+            int x = maxHeap.poll();
+
+            if (x != y) maxHeap.add(y - x);
+        }
+
+        return maxHeap.isEmpty() ? 0 : maxHeap.poll();
     }
 }
