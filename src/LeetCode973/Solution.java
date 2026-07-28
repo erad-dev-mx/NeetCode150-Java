@@ -1,0 +1,7 @@
+package LeetCode973;
+
+class Solution {
+    public int[][] kClosest(int[][] points, int k) {
+        
+    }
+}
