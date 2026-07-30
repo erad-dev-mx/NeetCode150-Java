@@ -13,7 +13,7 @@ class Solution {
     // FM = A - 3, B - 2
     // H = [3, 2]
     // We will create a kind of Frequency Map
-    // Then we create a Heap with the frecuencies in descending order
+    // Then we create a Heap with the frequencies in descending order
     // Next we will mark the scenarios based on (n + 1)
     // Initial Heap = [3, 2]
     // Pop -> [3, 2]
