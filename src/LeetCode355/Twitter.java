@@ -2,6 +2,22 @@ package LeetCode355;
 
 import java.util.List;
 
+// Twitter class: follow(), unfollow(), getNF(), postTweet()
+
+// For follow() and unfollow()
+// For each User we can create a HashSet of all the people that user follows
+// class User - int userId, teet - follow(), unfollow(), post() - HashSet: userIds
+
+// For postTweet()
+// class Tweet - int id, timestamp, User user - postTweet(tid, uid)
+
+// For generateNewsFeed()
+// [Erick] -> is following 10 people <- [Tweet]
+// We can go to User then people he/she follow, then check tweeet, now we get most recent 10
+// To order the tweets we can use a Heap/PriorityQueue
+
+// Mapping Structure - HashMap
+// | UserId | User |
 class Twitter {
 
     public Twitter() {
