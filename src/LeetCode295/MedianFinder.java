@@ -1,5 +1,7 @@
 package LeetCode295;
 
+import java.util.PriorityQueue;
+
 // Basically, we will calculate the median
 // (1,2,5,11,15,16) -> even -> 16/2 = 8
 // (1,2,5,8,9) -> odd -> 5
@@ -27,17 +29,20 @@ package LeetCode295;
 // Max:[5,3,2], Min[7,11,52]
 // Return answer 5 + 7 / 2 = 12 / 2 = 6
 class MedianFinder {
+    private PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a, b) -> b - a);
+    private PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
-    public MedianFinder() {
-        
-    }
+    public MedianFinder() {}
     
     public void addNum(int num) {
-        
+        maxHeap.offer(num); // Add to MaxHeap
+        minHeap.offer(maxHeap.poll()); // Balancing step
+
+        if (maxHeap.size() < minHeap.size()) maxHeap.offer(minHeap.poll()); // Maintain size property
     }
     
     public double findMedian() {
-        
+        return maxHeap.size() > minHeap.size() ? maxHeap.peek() : (maxHeap.peek() + minHeap.peek()) * 0.5;
     }
 }
 
