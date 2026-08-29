@@ -16,6 +16,7 @@ import java.util.List;
 //  b -v
 // [a,a,b][aa,b]
 // When we found that there is a partition that is not palindrome we stop looking down
+// Base case: start reaches s.length(). Add the current path.
 class Solution {
     public List<List<String>> partition(String s) {
         List<List<String>> result = new ArrayList<>();
