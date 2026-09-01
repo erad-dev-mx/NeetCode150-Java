@@ -1,5 +1,6 @@
 package LeetCode17;
 
+import java.util.ArrayList;
 import java.util.List;
 
 // Imagine we have this combination 46
@@ -14,7 +15,24 @@ import java.util.List;
 // ad, ac, af, bd,be, bf, cd, ce, cf
 // We will use the length once we have that number of combination to finish that backtrack
 class Solution {
+    private String[] digitToLetters = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+
     public List<String> letterCombinations(String digits) {
-        
+        List<String> combinations = new ArrayList<>();
+        if (digits == null || digits.length() == 0) return combinations;
+        backtrack(combinations, digits, "", 0);
+        return combinations;
+    }
+
+    private void backtrack(List<String> combinations, String digits, String currentCombination, int index) {
+        if (index == digits.length()) {
+            combinations.add(currentCombination);
+            return;
+        }
+
+        String letters = digitToLetters[digits.charAt(index) - '0'];
+        for (char letter : letters.toCharArray()) {
+            backtrack(combinations, digits, currentCombination + letter, index + 1);
+        }
     }
 }
