@@ -46,7 +46,7 @@ class Solution {
         if (freshCount == 0) return 0; // No fresh
 
         int minutes = 0;
-        int[][] directions = {{1,0}, {-1,0},{0,1},{0,-1}};
+        int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
         // BFS
         while (!rottenQueue.isEmpty()) {
@@ -60,7 +60,7 @@ class Solution {
 
                         grid[x][y] = 2; // fresh to rotten
                         freshCount--;
-                        rottenQueue.offer(new int[]{x,y});
+                        rottenQueue.offer(new int[]{x, y});
                     }
                 }
             }
