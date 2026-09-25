@@ -1,5 +1,8 @@
 package LeetCode286;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 class Solution {
     // -1 means there is an obstacle => W
     // 0 means there is a gate => G
@@ -22,7 +25,37 @@ class Solution {
     // Since we can have multiple G pointing to a same E we will mark the number of distance
     // Why? In order to always have the smallest
     // We are using BFS + Queue
-    public void wallsAndGates(int[][] rooms) {
 
+    private static final int INF = 2147483647;
+    private static final int[] DIRS = {0, 1, 0, -1, 0}; // 4-directional (right, down, left, up)
+
+    public void wallsAndGates(int[][] rooms) {
+        if (rooms == null || rooms.length == 0 || rooms[0].length == 0) return;
+
+        int m = rooms.length;
+        int n = rooms[0].length;
+        Queue<int[]> queue = new LinkedList<>();
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (rooms[i][j] == 0) queue.offer(new int[]{i, j});
+            }
+        }
+
+        while (!queue.isEmpty()) {
+            int[] gate = queue.poll();
+            int row = gate[0];
+            int col = gate[1];
+
+            for (int i = 0; i < 4; i++) {
+                int newRow = row + DIRS[i];
+                int newCol = col + DIRS[i + 1];
+
+                if (newRow >= 0 && newRow < m && newCol >= 0 && newCol < n && rooms[newRow][newCol] == INF) {
+                    rooms[newRow][newCol] = rooms[row][col] + 1;
+                    queue.offer(new int[]{newRow, newCol});
+                }
+            }
+        }
     }
 }
